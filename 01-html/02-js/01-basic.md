@@ -32,4 +32,33 @@ num = parseInt("1") // => 1
 num = parseInt("1s") // => 1
 num = parseFloat("1.1") // => 1.1
 num = +"1" // 1
-10 % 3 = 1
+10 % 3 = 1 // Modulus
+```
+
+### 1.3. boolean
+
+```js
+var correct = true;
+```
+
+### 1.4. array
+
+```js
+var arr = [1, 2, 3]
+
+arr.length // => 3: length of array (number of elements in array)
+arr[0] // => 1: index of an element
+arr[4] // => undefined
+arr.slice(0, 1) // => [1] (slice from start index to end index exclusive)
+arr.push(4) // => [1, 2, 3, 4]: add item to end of array
+arr.pop()
+
+arr.find(i => i % 2 == 0) // => 2: find first element satisfy the predicate
+arr.filter(i => i % 2 == 0) // [2]: find all elements satisfy the predicate
+arr.findIndex(i => i == 2) // 1: find index of element using predicate
+arr.indexOf(2) // => 1: find index of element
+
+# remove elements
+arr = []
+arr.length = 0
+```
