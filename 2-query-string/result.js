@@ -1,3 +1,5 @@
+// consider this implementation
+// https://stackoverflow.com/questions/8648892/how-to-convert-url-parameters-to-a-javascript-object
 function parseQueryString(s) {
   // s = ?name=abc&gender=male
   // return { name: "abc", gender: "male" }
