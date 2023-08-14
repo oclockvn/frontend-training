@@ -28,3 +28,20 @@ async function onLoad() {
 }
 
 onLoad();
+
+async function handleSave() {
+  const value = document.getElementById('input-text').value;
+  if (!value) {
+    return;
+  }
+
+  await addTodo(value); // submit data
+  await onLoad(); // reload data
+}
+
+document.getElementById('input-text').addEventListener('change', async function(e) {
+  await handleSave();
+
+  e.target.value = '';
+  // this.value = '';
+});
