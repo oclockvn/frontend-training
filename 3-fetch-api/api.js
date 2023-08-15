@@ -25,3 +25,10 @@ async function addTodo(description) {
 
   console.log(resp)
 }
+
+async function handleDelete(id) {
+  const resp = await fetch(baseUrl + 'v1/todos/' + id, {
+    method: 'DELETE'
+  });
+  // const json = await resp.json();
+}
